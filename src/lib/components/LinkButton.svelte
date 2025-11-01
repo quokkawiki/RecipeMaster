@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { buttonVariants, type ButtonVariant, type ButtonSize } from "$lib/components/ui/button";
-    import { cn } from "$lib/utils";
-    import type { Snippet } from "svelte";
+    import { buttonVariants, type ButtonVariant, type ButtonSize } from '$lib/components/ui/button';
+    import { cn } from '$lib/utils';
+    import type { Snippet } from 'svelte';
 
     const {
         class: className,
-        variant = "default",
-        size = "default",
+        variant = 'default',
+        size = 'default',
         children,
         ...props
     }: {
