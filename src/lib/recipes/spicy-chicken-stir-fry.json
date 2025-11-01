@@ -2,9 +2,9 @@
     "name": "Spicy Chicken Stir-Fry",
     "description": "Quick and flavorful stir-fried chicken with bell peppers and a spicy soy-garlic sauce.",
     "servings": 2,
-    "prep_time": "15 minutes",
-    "cook_time": "10 minutes",
-    "total_time": "25 minutes",
+    "prep_time": "PT15M",
+    "cook_time": "PT10M",
+    "total_time": "PT25M",
     "difficulty": 2,
     "tags": ["chicken", "spicy", "asian", "quick"],
 

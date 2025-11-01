@@ -2,9 +2,9 @@
     "name": "Creamy Tomato Basil Soup",
     "description": "A smooth, comforting soup made from ripe tomatoes, cream, and fresh basil.",
     "servings": 3,
-    "prep_time": "10 minutes",
-    "cook_time": "25 minutes",
-    "total_time": "35 minutes",
+    "prep_time": "PT10M",
+    "cook_time": "PT25M",
+    "total_time": "PT35M",
     "difficulty": 1,
     "tags": ["soup", "creamy", "vegetarian", "comfort food"],
 

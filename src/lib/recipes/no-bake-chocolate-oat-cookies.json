@@ -2,9 +2,9 @@
     "name": "No-Bake Chocolate Oat Cookies",
     "description": "Chewy, fudgy cookies made with oats, cocoa, and peanut butter — no oven required!",
     "servings": 10,
-    "prep_time": "10 minutes",
-    "cook_time": "5 minutes",
-    "total_time": "15 minutes",
+    "prep_time": "PT10M",
+    "cook_time": "PT5M",
+    "total_time": "PT15M",
     "difficulty": 0,
     "tags": ["dessert", "no-bake", "chocolate", "easy"],
 

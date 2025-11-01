@@ -2,9 +2,9 @@
     "name": "Crispy Pasta Snack",
     "description": "Crispy fried fusili tossed in paprika, salt, and sugar. Inspired by classic Israeli snack Bissli.",
     "servings": 4,
-    "prep_time": "10 minutes",
-    "cook_time": "15 minutes",
-    "total_time": "25 minutes",
+    "prep_time": "PT10M",
+    "cook_time": "PT15M",
+    "total_time": "PT25M",
     "difficulty": 0,
     "tags": ["crispy", "spicy", "pasta", "vegetarian"],
 
