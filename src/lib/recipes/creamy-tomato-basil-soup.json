@@ -10,10 +10,10 @@
 
     "ingredients": [
         { "name": "Ripe tomatoes, chopped", "quantity": 500, "unit": "grams" },
-        { "name": "Onion, diced", "quantity": 1, "unit": "medium" },
+        { "name": "Onion, diced", "quantity": 1 },
         { "name": "Garlic, minced", "quantity": 2, "unit": "cloves" },
         { "name": "Cream", "quantity": 100, "unit": "ml" },
-        { "name": "Fresh basil leaves", "quantity": 10, "unit": "leaves" },
+        { "name": "Fresh basil", "quantity": 10, "unit": "leaves" },
         { "name": "Olive oil", "quantity": 1, "unit": "tbsp" },
         { "name": "Salt", "quantity": 1, "unit": "tsp" }
     ],
