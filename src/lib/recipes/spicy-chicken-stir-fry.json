@@ -1,0 +1,29 @@
+{
+    "name": "Spicy Chicken Stir-Fry",
+    "description": "Quick and flavorful stir-fried chicken with bell peppers and a spicy soy-garlic sauce.",
+    "servings": 2,
+    "prep_time": "15 minutes",
+    "cook_time": "10 minutes",
+    "total_time": "25 minutes",
+    "difficulty": 2,
+    "tags": ["chicken", "spicy", "asian", "quick"],
+
+    "ingredients": [
+        { "name": "Chicken breast, sliced", "quantity": 250, "unit": "grams" },
+        { "name": "Bell peppers, sliced", "quantity": 1, "unit": "cup" },
+        { "name": "Soy sauce", "quantity": 2, "unit": "tbsp" },
+        { "name": "Garlic, minced", "quantity": 3, "unit": "cloves" },
+        { "name": "Chili flakes", "quantity": 1, "unit": "tsp" },
+        { "name": "Sesame oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "Cornstarch", "quantity": 1, "unit": "tsp" }
+    ],
+
+    "steps": [
+        "Mix soy sauce, chili flakes, and cornstarch to make the sauce.",
+        "Heat sesame oil in a wok and sauté garlic until golden.",
+        "Add chicken and cook until browned.",
+        "Add bell peppers and stir-fry for 2 minutes.",
+        "Pour in sauce and cook until thickened and glossy."
+    ],
+    "date": "2025-11-01"
+}

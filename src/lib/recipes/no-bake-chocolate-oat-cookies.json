@@ -1,0 +1,27 @@
+{
+    "name": "No-Bake Chocolate Oat Cookies",
+    "description": "Chewy, fudgy cookies made with oats, cocoa, and peanut butter — no oven required!",
+    "servings": 10,
+    "prep_time": "10 minutes",
+    "cook_time": "5 minutes",
+    "total_time": "15 minutes",
+    "difficulty": 0,
+    "tags": ["dessert", "no-bake", "chocolate", "easy"],
+
+    "ingredients": [
+        { "name": "Rolled oats", "quantity": 150, "unit": "grams" },
+        { "name": "Cocoa powder", "quantity": 2, "unit": "tbsp" },
+        { "name": "Sugar", "quantity": 100, "unit": "grams" },
+        { "name": "Peanut butter", "quantity": 3, "unit": "tbsp" },
+        { "name": "Butter", "quantity": 2, "unit": "tbsp" },
+        { "name": "Milk", "quantity": 50, "unit": "ml" }
+    ],
+
+    "steps": [
+        "In a saucepan, combine butter, sugar, milk, and cocoa powder. Bring to a boil for 1 minute.",
+        "Remove from heat and stir in peanut butter until melted.",
+        "Add oats and mix until well coated.",
+        "Spoon onto parchment paper and let cool until firm."
+    ],
+    "date": "2025-11-01"
+}

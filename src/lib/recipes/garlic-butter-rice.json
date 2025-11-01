@@ -1,0 +1,26 @@
+{
+    "name": "Garlic Butter Rice",
+    "description": "Fluffy rice infused with rich garlic butter and a touch of parsley — a simple yet flavorful side dish.",
+    "servings": 4,
+    "prep_time": "5 minutes",
+    "cook_time": "20 minutes",
+    "total_time": "25 minutes",
+    "difficulty": 0,
+    "tags": ["rice", "buttery", "easy", "vegetarian"],
+
+    "ingredients": [
+        { "name": "White rice", "quantity": 200, "unit": "grams" },
+        { "name": "Butter", "quantity": 3, "unit": "tbsp" },
+        { "name": "Garlic, minced", "quantity": 2, "unit": "cloves" },
+        { "name": "Salt", "quantity": 0.5, "unit": "tsp" },
+        { "name": "Parsley, chopped", "quantity": 1, "unit": "tbsp" }
+    ],
+
+    "steps": [
+        "Cook the rice until fluffy.",
+        "In a pan, melt butter and sauté garlic until fragrant.",
+        "Mix the cooked rice into the garlic butter and season with salt.",
+        "Garnish with parsley before serving."
+    ],
+    "date": "2025-11-01"
+}

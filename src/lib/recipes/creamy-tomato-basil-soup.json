@@ -1,0 +1,29 @@
+{
+    "name": "Creamy Tomato Basil Soup",
+    "description": "A smooth, comforting soup made from ripe tomatoes, cream, and fresh basil.",
+    "servings": 3,
+    "prep_time": "10 minutes",
+    "cook_time": "25 minutes",
+    "total_time": "35 minutes",
+    "difficulty": 1,
+    "tags": ["soup", "creamy", "vegetarian", "comfort food"],
+
+    "ingredients": [
+        { "name": "Ripe tomatoes, chopped", "quantity": 500, "unit": "grams" },
+        { "name": "Onion, diced", "quantity": 1, "unit": "medium" },
+        { "name": "Garlic, minced", "quantity": 2, "unit": "cloves" },
+        { "name": "Cream", "quantity": 100, "unit": "ml" },
+        { "name": "Fresh basil leaves", "quantity": 10, "unit": "leaves" },
+        { "name": "Olive oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "Salt", "quantity": 1, "unit": "tsp" }
+    ],
+
+    "steps": [
+        "Heat olive oil in a pot and sauté onion and garlic until translucent.",
+        "Add tomatoes and cook until soft.",
+        "Blend the mixture until smooth.",
+        "Return to pot, stir in cream and basil, and simmer for 5 minutes.",
+        "Season with salt and serve warm."
+    ],
+    "date": "2025-11-01"
+}
