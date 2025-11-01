@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Recipe } from '$lib/types/recipe';
+  import * as Breadcrumb from '$lib/components/ui/breadcrumb';
 
   export let data: { recipe: Recipe & { image: URL } };
   const { recipe } = data;
@@ -51,5 +52,20 @@
   {@html `<script type="application/ld+json">${jsonLdString}</script>`}
 </svelte:head>
 
+<Breadcrumb.Root>
+ <Breadcrumb.List>
+  <Breadcrumb.Item>
+   <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+  </Breadcrumb.Item>
+  <Breadcrumb.Separator />
+  <Breadcrumb.Item>
+   <Breadcrumb.Link href="/recipes">Recipes</Breadcrumb.Link>
+  </Breadcrumb.Item>
+  <Breadcrumb.Separator />
+  <Breadcrumb.Item>
+   <Breadcrumb.Page>{recipe.name}</Breadcrumb.Page>
+  </Breadcrumb.Item>
+ </Breadcrumb.List>
+</Breadcrumb.Root>
 <h1>{recipe.name}</h1>
 <p>{recipe.description}</p>

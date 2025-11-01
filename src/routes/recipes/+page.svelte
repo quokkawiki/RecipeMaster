@@ -1,20 +1,38 @@
-<script>
+<script lang="ts">
 	export let data;
 	const { recipes } = data;
 
 	import { Badge } from '$lib/components/ui/badge';
 	import * as Card from '$lib/components/ui/card';
 	import * as Tooltip from '$lib/components/ui/tooltip';
-	import LinkButton from '$lib/components/ui/LinkButton.svelte';
+	import * as Breadcrumb from '$lib/components/ui/breadcrumb';
+	import LinkButton from '$lib/components/LinkButton.svelte';
 	import { cn } from '$lib/utils.js';
+	import { ChefHat, CookingPot, Clock } from '@lucide/svelte';
+	import type { Component } from 'svelte';
+	import { Duration } from 'luxon';
 
 	// difficulty mapping helper
 	const difficultyMap = [
 		{ color: 'bg-green-500', label: 'easy' },
 		{ color: 'bg-yellow-400', label: 'intermediate' },
-		{ color: 'bg-red-500', label: 'hard' }
+		{ color: 'bg-red-500', label: 'difficult' }
 	];
+
 </script>
+
+
+<Breadcrumb.Root>
+ <Breadcrumb.List>
+  <Breadcrumb.Item>
+   <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+  </Breadcrumb.Item>
+  <Breadcrumb.Separator />
+  <Breadcrumb.Item>
+   <Breadcrumb.Page>Recipes</Breadcrumb.Page>
+  </Breadcrumb.Item>
+ </Breadcrumb.List>
+</Breadcrumb.Root>
 
 <h1>Recipes</h1>
 
@@ -45,10 +63,28 @@
 						</Card.Title>
 						<Card.Description>{recipe.description}</Card.Description>
 					</Card.Header>
-					<Card.Content class="-my-2 flex flex-wrap gap-1">
-						{#each recipe.tags as tag}
-							<Badge class="cursor-pointer transition hover:scale-105">{tag}</Badge>
-						{/each}
+					<Card.Content class="-my-2">
+						<div class="flex flex-wrap gap-2">
+							{#snippet stepTime(icon: Component, label: string, time: string)}
+									<Tooltip.Provider>
+										<Tooltip.Root>
+											<Tooltip.Trigger>
+												<Badge variant="secondary" class="inline-flex gap-1">
+													<svelte:component this={icon} /><span class="sr-only">{label}</span>
+													{Duration.fromISO(time).toHuman()}
+												</Badge>
+											</Tooltip.Trigger>
+											<Tooltip.Content>
+												<p>{label}</p>
+											</Tooltip.Content>
+										</Tooltip.Root>
+									</Tooltip.Provider>
+							{/snippet}
+
+							{@render stepTime(ChefHat, 'Preparation time', recipe.prep_time)}
+							{@render stepTime(CookingPot, 'Cooking time', recipe.cook_time)}
+							{@render stepTime(Clock, 'Total time', recipe.total_time)}
+						</div>
 					</Card.Content>
 					<Card.Footer>
 						<LinkButton href={`/recipes/${recipe.slug}`} class="w-full">View recipe</LinkButton>
