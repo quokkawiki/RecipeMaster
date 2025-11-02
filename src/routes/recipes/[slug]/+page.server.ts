@@ -12,7 +12,7 @@ export const load: PageServerLoad = async ({ params }) => {
         throw error(404, `Recipe not found.`);
     }
 
-    const recipe = { ...recipeData, image: `https://recipes.quokka.wiki/images/${slug}.jpg` };
+    const recipe = { ...recipeData, image: `http://localhost:5173/images/${slug}.jpg` };
 
     return { recipe };
 };

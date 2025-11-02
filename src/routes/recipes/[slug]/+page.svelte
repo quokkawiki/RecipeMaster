@@ -1,8 +1,9 @@
 <script lang="ts">
     import type { Recipe } from '$lib/types/recipe';
     import * as Breadcrumb from '$lib/components/ui/breadcrumb';
+    import SEO from '$lib/components/SEO.svelte';
 
-    export let data: { recipe: Recipe & { image: URL } };
+    export let data: { recipe: Recipe & { image: string } };
     const { recipe } = data;
 
     const jsonLd = {
@@ -48,6 +49,15 @@
     const jsonLdString = JSON.stringify(jsonLd);
 </script>
 
+<SEO 
+  title={recipe.name}
+  description={recipe.description}
+  image={recipe.image}
+  imageAlt={recipe.name}
+  publishedTime={recipe.date}
+  keywords={recipe.tags.join()}
+/>
+
 <svelte:head>
     {@html `<script type="application/ld+json">${jsonLdString}</script>`}
 </svelte:head>
@@ -67,5 +77,24 @@
         </Breadcrumb.Item>
     </Breadcrumb.List>
 </Breadcrumb.Root>
-<h1>{recipe.name}</h1>
-<p>{recipe.description}</p>
+
+
+<div class="relative my-2">
+  <img
+    class="fade-bottom rounded-xl w-full select-none"
+    src={recipe.image}
+    alt={recipe.name}
+  />
+  <div class="absolute inset-0 flex flex-col justify-end p-4">
+    <h1 class="font-bold text-6xl">{recipe.name}</h1>
+    <h2 class="text-3xl italic text-muted-foreground">{recipe.description}</h2>
+  </div>
+</div>
+
+
+
+<style>
+  .fade-bottom {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0));
+  }
+</style>

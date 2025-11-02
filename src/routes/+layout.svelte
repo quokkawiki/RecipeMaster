@@ -3,7 +3,8 @@
     import favicon from '$lib/assets/favicon.svg';
     import faviconDark from '$lib/assets/favicon-dark.svg';
     import { ModeWatcher } from 'mode-watcher';
-    import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+    import SEO from '$lib/components/SEO.svelte';
+    import Header from '$lib/components/Header.svelte';
 
     let { children } = $props();
 </script>
@@ -15,5 +16,11 @@
 
 <ModeWatcher />
 
-<ThemeSwitcher />
-{@render children()}
+<SEO 
+    description="Discover amazing recipes, cooking techniques, and culinary inspiration."
+/>
+
+<Header />
+<main class="px-12 sm:px-24 py-6">
+	{@render children()}
+</main>
