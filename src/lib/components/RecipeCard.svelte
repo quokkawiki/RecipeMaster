@@ -31,7 +31,7 @@
             {recipe.name}
             <RecipeDifficulty {recipe} />
         </Card.Title>
-        <Card.Description>{recipe.description}</Card.Description>
+        <Card.Description class="line-clamp-2">{recipe.description}</Card.Description>
     </Card.Header>
     <Card.Content class="-my-2">
         <div class="flex flex-wrap gap-2">
@@ -44,7 +44,7 @@
                                 class="inline-flex cursor-pointer gap-1 transition hover:scale-105"
                             >
                                 <svelte:component this={icon} /><span class="sr-only">{label}</span>
-                                {Duration.fromISO(time).toHuman()}
+                                {`${((d) => `${d.hours ? `${d.hours}h ` : ''} ${d.minutes ? `${d.minutes}min` : ''}`)(Duration.fromISO(time).toObject())}`}
                             </Badge>
                         </Tooltip.Trigger>
                         <Tooltip.Content>
