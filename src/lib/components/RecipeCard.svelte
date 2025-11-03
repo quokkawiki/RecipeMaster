@@ -7,7 +7,7 @@
     import type { Component } from 'svelte';
     import { Duration } from 'luxon';
     import type { Recipe } from '$lib/types/recipe';
-    import RecipeDifficulty from './RecipeDifficulty.svelte';
+    import RecipeDifficulty from '$lib/components/RecipeDifficulty.svelte';
 
     export let recipe: Recipe & { slug: string };
 </script>

@@ -1,7 +1,7 @@
-// src/routes/recipes/[slug]/+page.server.ts
 import { error } from '@sveltejs/kit';
 import type { Recipe } from '$lib/types/recipe';
 import type { PageServerLoad } from './$types';
+import { siteConfig } from '$lib/config/site';
 
 export const load: PageServerLoad = async ({ params }) => {
     const { slug } = params;
@@ -9,10 +9,14 @@ export const load: PageServerLoad = async ({ params }) => {
     const recipeData = modules[`/src/lib/recipes/${slug}.json`];
 
     if (!recipeData) {
-        throw error(404, `Recipe not found.`);
+        throw error(404, 'Recipe not found.');
     }
 
-    const recipe = { ...recipeData, image: `http://localhost:5173/images/${slug}.jpg` };
+    const recipe = { 
+        ...recipeData, 
+        image: `${siteConfig.url}/images/${slug}.jpg`, 
+        slug
+    };
 
     return { recipe };
 };
