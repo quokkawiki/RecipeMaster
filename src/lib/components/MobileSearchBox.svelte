@@ -9,7 +9,7 @@
 <Popover.Root>
     <Popover.Trigger
         class={cn(
-            "block md:hidden cursor-pointer",
+            "block min-[1000px]:hidden cursor-pointer",
             buttonVariants({ variant: 'ghost', size: 'icon' })
         )}
         >
