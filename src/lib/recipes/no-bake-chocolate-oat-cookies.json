@@ -9,12 +9,12 @@
     "tags": ["dessert", "no-bake", "chocolate", "easy"],
 
     "ingredients": [
-        { "name": "Rolled oats", "quantity": 150, "unit": "grams" },
-        { "name": "Cocoa powder", "quantity": 2, "unit": "tbsp" },
-        { "name": "Sugar", "quantity": 100, "unit": "grams" },
-        { "name": "Peanut butter", "quantity": 3, "unit": "tbsp" },
-        { "name": "Butter", "quantity": 2, "unit": "tbsp" },
-        { "name": "Milk", "quantity": 50, "unit": "ml" }
+        { "name": "rolled oats", "quantity": 150, "unit": "grams" },
+        { "name": "cocoa powder", "quantity": 2, "unit": "tbsp" },
+        { "name": "sugar", "quantity": 100, "unit": "grams" },
+        { "name": "peanut butter", "quantity": 3, "unit": "tbsp" },
+        { "name": "butter", "quantity": 2, "unit": "tbsp" },
+        { "name": "milk", "quantity": 50, "unit": "ml" }
     ],
 
     "steps": [

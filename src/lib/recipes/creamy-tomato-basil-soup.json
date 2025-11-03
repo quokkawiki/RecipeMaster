@@ -9,13 +9,13 @@
     "tags": ["soup", "creamy", "vegetarian", "comfort food"],
 
     "ingredients": [
-        { "name": "Ripe tomatoes, chopped", "quantity": 500, "unit": "grams" },
-        { "name": "Onion, diced", "quantity": 1 },
-        { "name": "Garlic, minced", "quantity": 2, "unit": "cloves" },
-        { "name": "Cream", "quantity": 100, "unit": "ml" },
-        { "name": "Fresh basil", "quantity": 10, "unit": "leaves" },
-        { "name": "Olive oil", "quantity": 1, "unit": "tbsp" },
-        { "name": "Salt", "quantity": 1, "unit": "tsp" }
+        { "name": "ripe tomatoes, chopped", "quantity": 500, "unit": "grams" },
+        { "name": "onion, diced", "quantity": 1 },
+        { "name": "garlic, minced", "quantity": 2, "unit": "cloves" },
+        { "name": "cream", "quantity": 100, "unit": "ml" },
+        { "name": "fresh basil", "quantity": 10, "unit": "leaves" },
+        { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "salt", "quantity": 1, "unit": "tsp" }
     ],
 
     "steps": [

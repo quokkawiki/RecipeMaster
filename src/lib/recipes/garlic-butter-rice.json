@@ -9,11 +9,11 @@
     "tags": ["rice", "buttery", "easy", "vegetarian"],
 
     "ingredients": [
-        { "name": "White rice", "quantity": 200, "unit": "grams" },
-        { "name": "Butter", "quantity": 3, "unit": "tbsp" },
-        { "name": "Garlic, minced", "quantity": 2, "unit": "cloves" },
-        { "name": "Salt", "quantity": 0.5, "unit": "tsp" },
-        { "name": "Parsley, chopped", "quantity": 1, "unit": "tbsp" }
+        { "name": "white rice", "quantity": 200, "unit": "grams" },
+        { "name": "butter", "quantity": 3, "unit": "tbsp" },
+        { "name": "garlic, minced", "quantity": 2, "unit": "cloves" },
+        { "name": "salt", "quantity": 0.5, "unit": "tsp" },
+        { "name": "parsley, chopped", "quantity": 1, "unit": "tbsp" }
     ],
 
     "steps": [

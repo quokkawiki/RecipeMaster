@@ -9,13 +9,13 @@
     "tags": ["chicken", "spicy", "asian", "quick"],
 
     "ingredients": [
-        { "name": "Chicken breast, sliced", "quantity": 250, "unit": "grams" },
-        { "name": "Bell peppers, sliced", "quantity": 1, "unit": "cup" },
-        { "name": "Soy sauce", "quantity": 2, "unit": "tbsp" },
-        { "name": "Garlic, minced", "quantity": 3, "unit": "cloves" },
-        { "name": "Chili flakes", "quantity": 1, "unit": "tsp" },
-        { "name": "Sesame oil", "quantity": 1, "unit": "tbsp" },
-        { "name": "Cornstarch", "quantity": 1, "unit": "tsp" }
+        { "name": "chicken breast, sliced", "quantity": 250, "unit": "grams" },
+        { "name": "bell peppers, sliced", "quantity": 1, "unit": "cup" },
+        { "name": "soy sauce", "quantity": 2, "unit": "tbsp" },
+        { "name": "garlic, minced", "quantity": 3, "unit": "cloves" },
+        { "name": "chili flakes", "quantity": 1, "unit": "tsp" },
+        { "name": "sesame oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "cornstarch", "quantity": 1, "unit": "tsp" }
     ],
 
     "steps": [

@@ -9,10 +9,10 @@
     "tags": ["crispy", "spicy", "pasta", "vegetarian"],
 
     "ingredients": [
-        { "name": "Fusili pasta, al dente", "quantity": 200, "unit": "grams" },
-        { "name": "Paprika", "quantity": 2, "unit": "tbsp" },
-        { "name": "Salt", "quantity": 1, "unit": "tsp" },
-        { "name": "Sugar", "quantity": 0.5, "unit": "tsp" }
+        { "name": "fusili pasta, al dente", "quantity": 200, "unit": "grams" },
+        { "name": "paprika", "quantity": 2, "unit": "tbsp" },
+        { "name": "salt", "quantity": 1, "unit": "tsp" },
+        { "name": "sugar", "quantity": 0.5, "unit": "tsp" }
     ],
 
     "steps": [
