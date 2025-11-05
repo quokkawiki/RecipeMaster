@@ -11,12 +11,7 @@
     const { featuredRecipes, totalRecipes, averageTime } = data;
 </script>
 
-<SEO
-    title="Home"
-    description="Discover delicious recipes for every occasion. From quick weeknight dinners to impressive gourmet dishes."
-    canonical="/"
-    keywords="recipes, cooking, food, meals, home cooking"
-/>
+<SEO />
 
 <!-- Hero Section -->
 <section class="relative mb-8 overflow-hidden rounded-lg">

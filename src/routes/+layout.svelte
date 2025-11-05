@@ -16,10 +16,6 @@
 
 <ModeWatcher />
 
-<SEO 
-    description="Discover amazing recipes, cooking techniques, and culinary inspiration."
-/>
-
 <Header />
 <main class="px-12 sm:px-24 py-6">
 	{@render children()}
