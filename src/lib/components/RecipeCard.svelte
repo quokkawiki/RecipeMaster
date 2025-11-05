@@ -35,7 +35,7 @@
     </Card.Header>
     <Card.Content class="-my-2">
         <div class="flex flex-wrap gap-2">
-            {#snippet stepTime(icon: Component, label: string, time: string)}
+            {#snippet stepTime(Icon: Component, label: string, time: string)}
                 <Tooltip.Provider>
                     <Tooltip.Root>
                         <Tooltip.Trigger>
@@ -43,8 +43,13 @@
                                 variant="secondary"
                                 class="inline-flex cursor-pointer gap-1 transition hover:scale-105"
                             >
-                                <svelte:component this={icon} /><span class="sr-only">{label}</span>
-                                {`${((d) => `${d.hours ? `${d.hours}h ` : ''} ${d.minutes ? `${d.minutes}min` : ''}`)(Duration.fromISO(time).toObject())}`}
+                                <Icon /><span class="sr-only">{label}</span>
+                                <time dateTime={time}>
+                                    {(() => {
+                                        const { hours, minutes } = Duration.fromISO(time).toObject();
+                                        return `${hours ? `${hours}h ` : ''}${minutes ? `${minutes}min` : ''}`;
+                                    })()}
+                                </time>
                             </Badge>
                         </Tooltip.Trigger>
                         <Tooltip.Content>

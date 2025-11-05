@@ -8,14 +8,14 @@
         { color: 'bg-red-500', label: 'difficult' }
     ];
 
-    const { recipe } = $props()
+    const { recipe, size = 2 } = $props()
 </script>
 
 <Tooltip.Provider>
     <Tooltip.Root>
         <Tooltip.Trigger
             class={cn(
-                'ms-1 inline-flex size-2 rounded-full',
+                `ms-1 inline-flex size-${size} rounded-full inline`,
                 difficultyMap[recipe.difficulty]?.color
             )}
         />
