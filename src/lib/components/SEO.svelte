@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { siteConfig } from "$lib/config/site";
+
     interface Props {
         title?: string;
         description?: string;
@@ -16,7 +18,7 @@
         title,
         description,
         canonical,
-        image = 'http://localhost:5173/images/opengraph.png',
+        image = `${siteConfig.url}/images/opengraph.png`,
         imageAlt = 'Logo of RecipeMaster',
         type = 'website',
         publishedTime,
