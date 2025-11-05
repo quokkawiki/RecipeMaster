@@ -20,7 +20,7 @@
 
 <!-- Hero Section -->
 <section class="relative mb-8 overflow-hidden rounded-lg">
-    <div class="hero-gradient flex min-h-[400px] flex-col items-center justify-center px-6 py-16 text-center">
+    <div class="flex min-h-[400px] flex-col items-center justify-center px-6 py-16 text-center">
         <div class="mb-4 flex items-center gap-2">
             <Icon class="size-16" />
         </div>
@@ -40,8 +40,8 @@
 </section>
 
 <!-- Stats Section -->
-<section class="mb-12 flex flex-col gap-4 md:flex-row">
-    <Card.Root class="flex-1 text-center transition hover:shadow-lg">
+<section class="mb-12 grid grid-cols-1 gap-4 md:grid-cols-3">
+    <Card.Root class="flex-1 text-center transition hover:scale-102">
         <Card.Content class="pt-6">
             <ChefHat class="mx-auto mb-2 h-12 w-12 text-primary" />
             <p class="text-3xl font-bold">{totalRecipes}</p>
@@ -49,7 +49,7 @@
         </Card.Content>
     </Card.Root>
     
-    <Card.Root class="flex-1 text-center transition hover:shadow-lg">
+    <Card.Root class="flex-1 text-center transition hover:scale-102">
         <Card.Content class="pt-6">
             <Clock class="mx-auto mb-2 h-12 w-12 text-primary" />
             <p class="text-3xl font-bold">{averageTime}</p>
@@ -57,7 +57,7 @@
         </Card.Content>
     </Card.Root>
     
-    <Card.Root class="flex-1 text-center transition hover:shadow-lg">
+    <Card.Root class="flex-1 text-center transition hover:scale-102">
         <Card.Content class="pt-6">
             <Star class="mx-auto mb-2 h-12 w-12 text-primary" />
             <p class="text-3xl font-bold">Easy</p>
@@ -76,11 +76,9 @@
         </LinkButton>
     </div>
     
-    <div class="flex flex-col gap-4 md:flex-row">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {#each featuredRecipes as recipe}
-            <div class="flex-1">
-                <RecipeCard {recipe} />
-            </div>
+            <RecipeCard {recipe} />
         {/each}
     </div>
 </section>
