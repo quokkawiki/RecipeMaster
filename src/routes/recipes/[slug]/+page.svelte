@@ -9,6 +9,7 @@
     import { ChefHat, CookingPot, Clock, Minus, Plus } from '@lucide/svelte';
     import { Duration } from 'luxon';
     import type { Component } from 'svelte';
+    import ImagePlaceholder from '$lib/components/ImagePlaceholder.svelte';
 
     let { data } = $props();
     const { recipe } = data;
@@ -39,10 +40,12 @@
 <Card.Root class="my-2">
     <Card.Header>
         <div class="relative">
-            <img
-                class="fade-bottom max-h-128 w-full rounded-md object-cover select-none"
+            <ImagePlaceholder
+                parentClass="mask-b-from-black mask-b-to-transparent max-h-128 w-full object-cover select-none rounded-md"
+                class="mask-b-from-black mask-b-to-secondary rounded-md"
                 src={recipe.image}
                 alt={recipe.name}
+                iconSize={48}
             />
 
             <!-- Overlay text on large screens, stacked below on small -->
@@ -155,9 +158,3 @@
         </div>
     </Card.Footer>
 </Card.Root>
-
-<style>
-    .fade-bottom {
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    }
-</style>

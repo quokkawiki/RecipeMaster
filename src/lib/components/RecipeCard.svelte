@@ -8,25 +8,18 @@
     import { Duration } from 'luxon';
     import type { Recipe } from '$lib/types/recipe';
     import RecipeDifficulty from '$lib/components/RecipeDifficulty.svelte';
+    import ImagePlaceholder from './ImagePlaceholder.svelte';
 
     export let recipe: Recipe & { slug: string };
 </script>
 
 <Card.Root class="transition hover:scale-102">
     <Card.Header>
-        <div class="relative mb-1 overflow-hidden rounded-md">
-            <!-- Placeholder -->
-            <div class="flex items-center justify-center bg-muted" style="aspect-ratio: 40/21;">
-                <ImageIcon class="size-16 text-muted-foreground" />
-            </div>
-
-            <!-- Actual image -->
-            <img
-                class="absolute top-0 left-0 w-full rounded-md transition-opacity duration-300"
-                src={`/images/${recipe.slug}.jpg`}
-                alt={recipe.name}
-            />
-        </div>
+        <ImagePlaceholder
+            class="rounded-md"
+            src={`/images/${recipe.slug}.jpg`}
+            alt={recipe.name}
+        />
         <Card.Title>
             {recipe.name}
             <RecipeDifficulty {recipe} />
