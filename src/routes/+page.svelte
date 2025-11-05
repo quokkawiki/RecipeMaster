@@ -1,6 +1,5 @@
 <script lang="ts">
     import SEO from '$lib/components/SEO.svelte';
-    import RecipeGrid from '$lib/components/RecipeGrid.svelte';
     import * as Card from '$lib/components/ui/card';
     import { ChefHat, Clock, Star, ArrowRight } from '@lucide/svelte';
     import Icon from '$lib/assets/icon.svelte';
