@@ -7,6 +7,7 @@
         alt,
         class: className,
         parentClass,
+        aspectRatio = "40/21",
         iconSize = 16,
         ...props
     }: {
@@ -14,12 +15,13 @@
         alt: string;
         class?: string;
         parentClass?: string;
+        aspectRatio?: string;
         iconSize?: number;
     } = $props();
 </script>
 
-<div class={cn("relative mb-1 overflow-hidden", parentClass)}>
-    <div class="flex items-center justify-center bg-muted" style="aspect-ratio: 40/21;">
+<div class={cn("relative mb-1 overflow-hidden", parentClass)} style={`aspect-ratio: ${aspectRatio};`}>
+    <div class="flex items-center justify-center bg-muted" style={`aspect-ratio: ${aspectRatio};`}>
         <ImageIcon size={`${iconSize * 0.25}rem`} class="text-muted-foreground" />
     </div>
 
